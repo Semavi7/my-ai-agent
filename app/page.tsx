@@ -113,6 +113,11 @@ export default function Home() {
               <option value="llama3b">{AVAILABLE_MODELS.llama3b.name}</option>
               <option value="qwen">{AVAILABLE_MODELS.qwen.name}</option>
               <option value="qwenMax">{AVAILABLE_MODELS.qwenMax.name}</option>
+              <option value="gemma">{AVAILABLE_MODELS.gemma.name}</option>
+              <option value="tinyLlama">{AVAILABLE_MODELS.tinyLlama.name}</option>
+              <option value="mistral">{AVAILABLE_MODELS.mistral.name}</option>
+              <option value="gemma3_1b">{AVAILABLE_MODELS.gemma3_1b.name}</option>
+              <option value="gemma3_4b">{AVAILABLE_MODELS.gemma3_4b.name}</option>
             </select>
             <button 
               onClick={loadModel} 

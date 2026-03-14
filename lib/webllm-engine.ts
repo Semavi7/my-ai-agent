@@ -30,6 +30,31 @@ export const AVAILABLE_MODELS = {
     id: "Qwen2.5-3B-Instruct-q4f32_1-MLC",
     name: "Qwen-2.5-3B (Maksimum Güç)",
     size: "~2.5GB"
+  },
+  gemma: {
+    id: "gemma-2-2b-it-q4f32_1-MLC",
+    name: "Gemma-2-2B (Google Mantığı)",
+    size: "~1.8GB"
+  },
+  tinyLlama: {
+    id: "TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC",
+    name: "TinyLlama-1.1B (Ultra Hafif Sohbet)",
+    size: "~700MB"
+  },
+  mistral: {
+    id: "Mistral-7B-Instruct-v0.3-q4f32_1-MLC",
+    name: "Mistral-7B v0.3 (Profesyonel Ajan)",
+    size: "~4.5GB"
+  },
+  gemma3_1b: {
+    id: "gemma-3-1b-it-q4f32_1-MLC",
+    name: "Gemma 3 (1B - En Yeni Google Zekası)",
+    size: "~800MB" 
+  },
+  gemma3_4b: {
+    id: "gemma-3-4b-it-q4f32_1-MLC",
+    name: "Gemma 3 (4B - Yüksek Performans)",
+    size: "~3.3GB"
   }
 } as const;
 
