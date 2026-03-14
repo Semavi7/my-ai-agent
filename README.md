@@ -51,7 +51,7 @@ Tarayıcı tabanlı, tamamen istemci-taraflı çalışan otonom yapay zeka sohbe
 - **%100 İstemci Taraflı LLM**: Model ağırlıkları tarayıcıya indirilir ve WebGPU shader'ları ile çalıştırılır. Hiçbir token bulut LLM servisine gönderilmez.
 - **Otonom Arama Kararı**: Ajan, kullanıcının sorusunu analiz ederek web aramasının gerekip gerekmediğine otomatik olarak karar verir.
 - **Gerçek Zamanlı Akış**: Üretilen tokenlar arayüze anlık olarak yansıtılır.
-- **Çoklu Model Desteği**: 360MB ile 2.5GB arasında 6 farklı model arasından seçim yapılabilir.
+- **Çoklu Model Desteği**: 360MB ile 4.5GB arasında 11 farklı model arasından seçim yapılabilir.
 - **GPU Shader Önbellek Kurtarma**: Shader derleme hatalarında ilgili önbellekler otomatik temizlenir ve yeniden deneme yapılır.
 - **Türkçe Arayüz**: Tüm UI metinleri ve sistem promptları Türkçedir.
 
@@ -150,6 +150,11 @@ router_node ──── LLM'e sorar: "Bu soru için web araması gerekli mi?"
 | `llama3b` | Llama-3.2-3B-Instruct-q4f32_1-MLC | Llama-3.2-3B (Çok Zeki) | ~2.5 GB |
 | `qwen` | Qwen2.5-1.5B-Instruct-q4f32_1-MLC | Qwen-2.5-1.5B (Türkçe Ustası) | ~1.5 GB |
 | `qwenMax` | Qwen2.5-3B-Instruct-q4f32_1-MLC | Qwen-2.5-3B (Maksimum Güç) | ~2.5 GB |
+| `gemma` | gemma-2-2b-it-q4f32_1-MLC | Gemma-2-2B (Google Mantığı) | ~1.8 GB |
+| `tinyLlama` | TinyLlama-1.1B-Chat-v1.0-q4f32_1-MLC | TinyLlama-1.1B (Ultra Hafif Sohbet) | ~700 MB |
+| `mistral` | Mistral-7B-Instruct-v0.3-q4f32_1-MLC | Mistral-7B v0.3 (Profesyonel Ajan) | ~4.5 GB |
+| `gemma3_1b` | gemma-3-1b-it-q4f32_1-MLC | Gemma 3 (1B - En Yeni Google Zekası) | ~800 MB |
+| `gemma3_4b` | gemma-3-4b-it-q4f32_1-MLC | Gemma 3 (4B - Yüksek Performans) | ~3.3 GB |
 
 Model ağırlıkları ilk yüklemede MLC CDN'den indirilir ve tarayıcının Cache API'sinde (ya da IndexedDB'de) saklanır. Sonraki oturumlar için tekrar indirme gerekmez.
 
